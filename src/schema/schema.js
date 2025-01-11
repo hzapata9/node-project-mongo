@@ -1,3 +1,5 @@
+import mongoose from "mongoose";
+
 
 const ClientScheme = mongoose.Schema({
   name: {
@@ -12,4 +14,6 @@ const ClientScheme = mongoose.Schema({
     zipcode: Number,
   },
 });
-const ClientModel = mongoose.model("clients", ClientScheme);
+export const ClientModel = mongoose.model("clients", ClientScheme);
+
+//export default ClientModel;
